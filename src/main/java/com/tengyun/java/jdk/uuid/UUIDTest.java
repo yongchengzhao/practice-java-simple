@@ -7,10 +7,10 @@ import java.util.UUID;
  */
 public class UUIDTest {
     public static void main(String[] args) {
-        createUUID();
+        createUuid();
     }
 
-    public static void createUUID() {
+    public static void createUuid() {
         UUID u1 = UUID.randomUUID();
         UUID u2 = UUID.randomUUID();
 
