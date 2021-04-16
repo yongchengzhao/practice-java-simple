@@ -8,14 +8,14 @@ public class ThreadTest {
         System.out.println("===================Thread Test===============");
 
         // 创建线程
-        MyThread thread1 = new MyThread("thread1");
-        MyThread thread2 = new MyThread("thread2");
-        MyThread thread3 = new MyThread("thread3");
+        MyThread myThread1 = new MyThread("myThread1");
+        MyThread myThread2 = new MyThread("myThread2");
+        MyThread myThread3 = new MyThread("myThread3");
 
         // 启动线程
-        thread1.start();
-        thread2.start();
-        thread3.start();
+        myThread1.start();
+        myThread2.start();
+        myThread3.start();
 
         System.out.println("Exit main() method");
     }

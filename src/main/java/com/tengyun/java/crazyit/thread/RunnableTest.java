@@ -6,14 +6,14 @@ package com.tengyun.java.crazyit.thread;
 public class RunnableTest {
     public static void main(String[] args) {
         // 创建线程
-        Thread thread1 = new Thread(new MyRunnable("thread1"));
-        Thread thread2 = new Thread(new MyRunnable("thread2"));
-        Thread thread3 = new Thread(new MyRunnable("thread3"));
+        Thread myRunnable1 = new Thread(new MyRunnable("myRunnable1"));
+        Thread myRunnable2 = new Thread(new MyRunnable("myRunnable2"));
+        Thread myRunnable3 = new Thread(new MyRunnable("myRunnable3"));
 
         // 启动线程
-        thread1.start();
-        thread2.start();
-        thread3.start();
+        myRunnable1.start();
+        myRunnable2.start();
+        myRunnable3.start();
 
         System.out.println("Exit main() method");
     }
