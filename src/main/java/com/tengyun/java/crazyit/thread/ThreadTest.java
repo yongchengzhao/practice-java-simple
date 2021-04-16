@@ -16,6 +16,8 @@ public class ThreadTest {
         thread1.start();
         thread2.start();
         thread3.start();
+
+        System.out.println("Exit main() method");
     }
 }
 
