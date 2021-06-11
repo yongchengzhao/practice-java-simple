@@ -19,5 +19,6 @@ public class UUIDTest {
         // u2: 8961cd7b-3c19-40cc-a1eb-e4d26ea751d6
         System.out.println("u2: " + u2);
         System.out.println(u1.compareTo(u2));
+        System.out.println(u1.version());
     }
 }
