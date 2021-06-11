@@ -30,8 +30,11 @@ enum Gender {
     /**
      * MALE-男
      * FEMALE-女
+     * OTHERS-其他
      */
-    MALE(1), FEMALE(0), OTHERS(2);
+    MALE(1),
+    FEMALE(0),
+    OTHERS(2);
 
     private final Integer code;
 
