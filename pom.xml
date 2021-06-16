@@ -21,6 +21,11 @@
 
     <!-- 依赖 -->
     <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.16</version>
+        </dependency>
     </dependencies>
 
     <!-- 构建 -->
