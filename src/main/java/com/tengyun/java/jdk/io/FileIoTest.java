@@ -11,9 +11,17 @@ import java.util.Objects;
  */
 public class FileIoTest {
     public static void main(String[] args) {
-        System.out.println("main method");
-        copyFile("src/main/java/com/tengyun/java/jdk/io/img0_2560x1600.jpg",
-                "src/main/java/com/tengyun/java/jdk/io/img0_2560x1600-bak.jpg");
+        System.out.println("----------------------FileIoTest.main()----------------------");
+//        copyFile("src/main/java/com/tengyun/java/jdk/io/img0_2560x1600.jpg", "src/main/java/com/tengyun/java/jdk/io/img0_2560x1600-bak.jpg");
+        writeTest();
+    }
+
+    public static void writeTest() {
+        try (FileOutputStream fot = new FileOutputStream("src/main/java/com/tengyun/java/jdk/io/adam.log")) {
+            fot.write(97);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public static void copyFile(String sourceFile, String targetFile) {
