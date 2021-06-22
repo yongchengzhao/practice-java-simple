@@ -11,9 +11,8 @@ public class ForTest {
     public static void forTest1() {
         int counter = 3;
         // for 循环的括号中第二个分号后面的代码甚至可以调用方法。
-        for (int i = 0; i < counter; printI(i)) {
+        for (int i = 0; i < counter; i++, printI(i)) {
             System.out.println("for------------");
-            i++;
         }
     }
 
