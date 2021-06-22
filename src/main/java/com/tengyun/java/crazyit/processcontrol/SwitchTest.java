@@ -6,13 +6,12 @@ package com.tengyun.java.crazyit.processcontrol;
  */
 public class SwitchTest {
     public static void main(String[] args) {
-        nameSwitch();
-        scoreSwitch();
+        stringSwitch("Adam");
+        charSwitch('A');
+        enumSwitch(Gender.MALE);
     }
 
-    public static void nameSwitch() {
-        String name = "Adam";
-
+    public static void stringSwitch(String name) {
         switch (name.toLowerCase()) {
             case "god":
                 System.out.println("上帝");
@@ -28,9 +27,7 @@ public class SwitchTest {
         }
     }
 
-    public static void scoreSwitch() {
-        char score = 'B';
-
+    public static void charSwitch(char score) {
         switch (score) {
             case 'A':
                 System.out.println("优秀");
@@ -47,5 +44,43 @@ public class SwitchTest {
             default:
                 System.out.println("其他");
         }
+    }
+
+    public static void enumSwitch(Gender gender) {
+        switch (gender) {
+            case FEMALE:
+                System.out.println("女，编码：" + Gender.FEMALE.getCode());
+                break;
+            case MALE:
+                System.out.println("男，编码：" + Gender.MALE.getCode());
+                break;
+            case OTHERS:
+                System.out.println("其他，编码：" + Gender.OTHERS.getCode());
+                break;
+            default:
+                System.out.println("枚举错误");
+        }
+    }
+}
+
+enum Gender {
+    /**
+     * 性别
+     */
+    FEMALE((byte) 0),
+    MALE((byte) 1),
+    OTHERS((byte) 2);
+
+    /**
+     * 性别编码
+     */
+    private final byte code;
+
+    Gender(byte code) {
+        this.code = code;
+    }
+
+    public byte getCode() {
+        return code;
     }
 }
