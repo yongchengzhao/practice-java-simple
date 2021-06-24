@@ -2,7 +2,6 @@ package com.tengyun.java.jdk.clone;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NonNull;
 
 /**
  * @author Adam Zhao
